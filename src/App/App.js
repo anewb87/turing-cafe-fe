@@ -39,6 +39,18 @@ class App extends Component {
       .catch(error => console.log(error));
   }
 
+  deleteReservation = (id) => {
+    return fetch(`http://localhost:3001/api/v1/reservations/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(response => response.json())
+      .then(data => this.getReservations())
+      .catch(error => console.log(error))
+
+  }
 
 
 
@@ -61,7 +73,7 @@ class App extends Component {
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
         <Form addReservation={this.postReservation}/>
-        <ResyContainer reservations={this.state.reservations}/>
+        <ResyContainer reservations={this.state.reservations} deleteReservation={this.deleteReservation}/>
       </div>
     )
   }
