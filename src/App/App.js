@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ResyContainer from '../Components/ResyContainer/ResyContainer';
+import Form from '../Components/Form/Form';
 import './App.css';
 
 class App extends Component {
@@ -23,12 +24,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
-        <div className='resy-form'>
-
-        </div>
-        {/* <div className='resy-container'> */}
+        <Form />
         <ResyContainer reservations={this.state.reservations}/>
-        {/* </div> */}
       </div>
     )
   }
