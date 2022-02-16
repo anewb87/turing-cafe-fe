@@ -40,7 +40,14 @@ describe('Landing Page', () => {
 
         cy.get('.reservation-card')
             .first()
-            
+            .should('contain', 'Christie')
+            .should('contain', '12/29')
+            .should('contain', '7:00')
+            .should('contain', 'Number of guests: 12')
+        
+        cy.get('button')
+            .eq(1)
+            .should('contain', 'Cancel')
     })
 
 })
