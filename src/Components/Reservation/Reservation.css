@@ -8,9 +8,9 @@
   width: 250px;
 }
 
-button {
+.cancel-btn {
     color: white;
     background-color: teal;
-    width: 150px;
+    width: 80%;
     border: 1px solid grey;
 }
