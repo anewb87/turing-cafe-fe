@@ -21,7 +21,6 @@ const ResyContainer = ({ reservations }) => {
             {reservationCards}
         </div>
     )
-
 }
 
 export default ResyContainer
