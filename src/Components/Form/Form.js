@@ -26,6 +26,7 @@ class Form extends Component {
         this.clearInputs()
     }
 
+
     clearInputs = () => {
         this.setState({
             name: '',

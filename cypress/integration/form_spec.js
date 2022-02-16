@@ -1,4 +1,4 @@
-describe('Form Functionality', () => {
+describe('Form Values Functionality', () => {
     it('Should be able to fill out the form and see those values reflected in the form inputs', () => {
         cy.visit('http://localhost:3000/')
 
